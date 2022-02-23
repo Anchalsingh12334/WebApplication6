@@ -1,0 +1,23 @@
+﻿@model IEnumerable<WebApplication6.Models.Customer>
+@{
+}
+<table class="table table table-bordered">
+    <tr>
+        <th> Name</th>
+        <th>
+            Email
+        </th>
+    </tr>
+    @foreach (var cust in Model)
+    {
+        <tr>
+            <td>
+                @cust.Name
+            </td>
+
+            <td>@cust.Email </td>
+        </tr>
+
+    }
+    </table>
+    
